@@ -92,6 +92,9 @@ img {
 .header_top {
     background-color: var(--sp-darker);
 }
+.header_bottom {
+    font-weight: 500;
+}
 header .my_btn {
     color: var(--sp-light);
     background-color: var(--sp-secondary-dark);
@@ -101,7 +104,25 @@ header i {
 }
 
 /* #region Main*/
+.returnal .jumbotron {
+    height: 650px;
+    position: relative;
+}
+.jumbotron img {
+    height: 100%;
+    object-fit: cover;
 
+}
+.returnal .text_jumbo {
+    position: absolute;
+    left: 2rem;
+    bottom:2rem;
+}
+
+.returnal a {
+    background-color: var(--sp-danger);
+    color: var(--sp-light);
+}
 .new {
     background-color: var(--sp-dark);
 }
