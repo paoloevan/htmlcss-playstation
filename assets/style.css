@@ -63,11 +63,14 @@ img {
 }
 .debug .slide_presentation,
 .debug .card_new,
-.debug .card_explore {
+.debug .card_explore,
+.debug .card_sale {
     border: 1px solid red;
     height: 150px;
 }
-
+.debug .plus {
+    height: 300px;
+}
 
 
 /* #region Header */
@@ -79,4 +82,8 @@ img {
 
 .new {
     background-color: var(--sp-dark);
+}
+
+.plus {
+    background-color: var(--sp-secondary-light);
 }
