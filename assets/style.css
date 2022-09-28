@@ -1,5 +1,5 @@
 /* #region Common rules */
-root {
+:root {
     --sp-darker: #000000;
     --sp-light: #FFFFFF;
     --sp-dark-blue: #161C3B;
@@ -31,3 +31,17 @@ img {
     max-width: 100%;
 }
 /* #endregion */
+
+/* #region Debug */
+.debug .header_top {
+    height: 50px;
+}
+.debug .header_bottom {
+    height: 100px;
+    background-color: #2D64E6;
+}
+
+/* #region Header */
+.header_top {
+    background-color: var(--sp-dark);
+}
