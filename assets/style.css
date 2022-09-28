@@ -123,6 +123,10 @@ header i {
     background-color: var(--sp-danger);
     color: var(--sp-light);
 }
+
+.my_carousel .my_card img {
+    border-radius: 15px;
+}
 .new {
     background-color: var(--sp-dark);
 }
