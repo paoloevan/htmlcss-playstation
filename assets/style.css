@@ -33,6 +33,11 @@ img {
 }
 /* #endregion */
 
+/* Utilities */
+.hidden_col {
+    display: none;
+}
+
 /* #region Debug */
 .debug .header_top {
     height: 50px;
@@ -64,7 +69,10 @@ img {
 .debug .slide_presentation,
 .debug .card_new,
 .debug .card_explore,
-.debug .card_sale {
+.debug .card_sale,
+.debug .card_plus,
+.debug .card_now,
+.debug .card_social {
     border: 1px solid red;
     height: 150px;
 }
@@ -86,4 +94,17 @@ img {
 
 .plus {
     background-color: var(--sp-secondary-light);
+}
+
+.now {
+    background-color: var(--sp-dark-blue);
+}
+
+/*******************
+****Media Query*****
+**********************/
+@media screen and (min-width:768px) {
+    .hidden_col {
+        display:block;
+    }
 }
