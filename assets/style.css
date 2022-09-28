@@ -40,8 +40,21 @@ img {
     height: 100px;
     background-color: #2D64E6;
 }
+.debug .returnal {
+    height: 300px;
+    background-color: #161C3B;
+}
+.debug .my_carousel {
+    height: 150px;
+}
+.debug .my_card{
+    border: 1px solid;
+    height: 50px;
+}
 
 /* #region Header */
 .header_top {
     background-color: var(--sp-dark);
 }
+
+/* #region */
