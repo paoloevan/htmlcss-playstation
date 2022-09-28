@@ -62,7 +62,8 @@ img {
     height: 150px;
 }
 .debug .slide_presentation,
-.debug .card_new {
+.debug .card_new,
+.debug .card_explore {
     border: 1px solid red;
     height: 150px;
 }
