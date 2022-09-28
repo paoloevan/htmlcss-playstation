@@ -72,7 +72,8 @@ img {
 .debug .card_sale,
 .debug .card_plus,
 .debug .card_now,
-.debug .card_social {
+.debug .card_social,
+.debug .card_footer {
     border: 1px solid red;
     height: 150px;
 }
@@ -98,6 +99,11 @@ img {
 
 .now {
     background-color: var(--sp-dark-blue);
+}
+
+/* footer */
+footer {
+    background-color: var(--sp-primary);
 }
 
 /*******************
