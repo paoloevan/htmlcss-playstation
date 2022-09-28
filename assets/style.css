@@ -1,0 +1,33 @@
+/* #region Common rules */
+root {
+    --sp-darker: #000000;
+    --sp-light: #FFFFFF;
+    --sp-dark-blue: #161C3B;
+    --sp-dark: #1F1F1F;
+    --sp-primary: #2D64E6;
+    --sp-secondary-dark: #363636;
+    --sp-secondary: #727272;
+    --sp-secondary-light: #BEBCBB;
+    --sp-danger: #CD3D0F;
+    --sp-light-dark: #D9DADC;
+}
+
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 23px;
+}
+p {
+    font-size: 19px;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+/* #endregion */
