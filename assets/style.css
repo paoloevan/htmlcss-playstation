@@ -33,10 +33,6 @@ img {
 }
 /* #endregion */
 
-/* Utilities */
-.hidden_col {
-    display: none;
-}
 
 /* #region Debug */
 .debug .header_top {
@@ -80,11 +76,28 @@ img {
 .debug .plus {
     height: 300px;
 }
+/* #endregion */
 
+/* Utilities */
+.hidden_col {
+    display: none;
+}
+.my_btn {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 0.6rem 1rem;
+}
 
 /* #region Header */
 .header_top {
-    background-color: var(--sp-dark);
+    background-color: var(--sp-darker);
+}
+header .my_btn {
+    color: var(--sp-light);
+    background-color: var(--sp-secondary-dark);
+}
+header i {
+    color: var(--sp-darker);
 }
 
 /* #region Main*/
