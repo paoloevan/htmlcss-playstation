@@ -109,22 +109,24 @@ header i {
 /* #endregion */
 
 /* #region Main*/
-.returnal .jumbotron {
+.returnal .jumbotron,
+.takes_two .jumbotron {
     height: 650px;
     position: relative;
 }
 .jumbotron img {
     height: 100%;
     object-fit: cover;
-
 }
-.returnal .text_jumbo {
+.returnal .text_jumbo,
+.takes_two .text_jumbo {
     position: absolute;
     left: 2rem;
-    bottom:2rem;
+    bottom: 4rem;
 }
 
-.returnal a {
+.returnal a,
+.takes_two a {
     background-color: var(--sp-danger);
     color: var(--sp-light);
 }
