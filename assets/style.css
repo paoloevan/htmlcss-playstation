@@ -45,12 +45,26 @@ img {
     background-color: #161C3B;
 }
 .debug .my_carousel {
-    height: 150px;
+    height: 500px;
 }
 .debug .my_card{
     border: 1px solid;
     height: 50px;
 }
+.debug .presentation {
+    background-color: antiquewhite;
+    height: 1000px;
+}
+.debug .card_presentation {
+    border: 1px solid;
+    height: 150px;
+}
+.debug .slide_presentation {
+    border: 1px solid;
+    height: 150px;
+}
+
+
 
 /* #region Header */
 .header_top {
