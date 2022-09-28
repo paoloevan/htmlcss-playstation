@@ -23,7 +23,7 @@ h3 {
     font-size: 23px;
 }
 p {
-    font-size: 19px;
+    font-size: 1rem;
 }
 body {
     font-family: 'Inter', sans-serif;
@@ -87,6 +87,10 @@ img {
     border-radius: 20px;
     padding: 0.6rem 1rem;
 }
+.my_p_bg {
+    color: var(--sp-secondary);
+    font-weight: 500;
+}
 
 /* #region Header */
 .header_top {
@@ -102,6 +106,7 @@ header .my_btn {
 header i {
     color: var(--sp-darker);
 }
+/* #endregion */
 
 /* #region Main*/
 .returnal .jumbotron {
@@ -127,6 +132,21 @@ header i {
 .my_carousel .my_card img {
     border-radius: 15px;
 }
+
+.presentation .sub_title {
+    font-size: 0.8rem;
+    color: var(--sp-primary);
+    font-weight: 500;
+}
+.presentation .my_btn {
+    background-color: var(--sp-primary);
+    color: var(--sp-light);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.presentation .slide_presentation:hover {
+    border-bottom: 3px solid var(--sp-primary);
+}
 .new {
     background-color: var(--sp-dark);
 }
@@ -138,6 +158,7 @@ header i {
 .now {
     background-color: var(--sp-dark-blue);
 }
+
 
 /* footer */
 footer {
