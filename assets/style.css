@@ -164,15 +164,18 @@ header i {
     background-color: var(--sp-light-dark);
     font-weight: 500;
 }
-.plus .card_plus {
+.plus .card_plus,
+.now .card_plus {
     height: 30%;
-}
-.plus .hidden_col .card_plus {
-    height: 100%;
 }
 
 .now {
     background-color: var(--sp-dark-blue);
+}
+.now .my_btn {
+    color: var(--sp-darker);
+    background-color:var(--sp-light);
+    font-weight: 500;
 }
 
 
