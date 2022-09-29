@@ -164,7 +164,13 @@ header .fa-magnifying-glass:hover {
 .takes_two .my_btn:hover {
     box-shadow: 1px 0px 0px 4px rgb(111, 7, 7) inset;
 }
-
+.my_card {
+    transition: transform 0.1s ease-in-out;
+}
+.my_carousel .my_card:hover {
+    cursor: pointer;
+    transform: translate(0,-20px);
+}
 .my_carousel .my_card img {
     border-radius: 15px;
 }
@@ -181,6 +187,29 @@ header .fa-magnifying-glass:hover {
     font-size: 0.8rem;
     font-weight: 500;
     transition: box-shadow ease-in-out 0.3s;
+}
+.presentation .slide_presentation.my_active {
+    border-bottom: 3px solid var(--sp-primary);
+
+}
+.presentation .slide_presentation {
+    position: relative;
+}
+.presentation .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.344);
+    z-index: 99;
+}
+.presentation .slide_presentation:hover{
+    cursor: pointer;
+}
+
+.presentation .slide_presentation:hover
+.overlay {
+    cursor: pointer;
+    display: none;
 }
 .presentation .my_btn:hover,
 .explore .my_btn:hover {
@@ -233,6 +262,9 @@ footer {
 }
 .my_p_footer {
     font-size: 0.8rem;
+}
+footer span:hover {
+    cursor: pointer;
 }
 
 /*******************
