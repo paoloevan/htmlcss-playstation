@@ -24,6 +24,7 @@ h3 {
 }
 p {
     font-size: 15px;
+    font-weight: 500;
 }
 body {
     font-family: 'Inter', sans-serif;
@@ -81,6 +82,7 @@ img {
 /* Utilities */
 .hidden_col {
     display: none;
+    height: 100%;
 }
 .my_btn {
     text-decoration: none;
@@ -125,8 +127,8 @@ header i {
     bottom: 4rem;
 }
 
-.returnal a,
-.takes_two a {
+.returnal .my_btn,
+.takes_two .my_btn {
     background-color: var(--sp-danger);
     color: var(--sp-light);
 }
@@ -156,6 +158,17 @@ header i {
 
 .plus {
     background-color: var(--sp-secondary-light);
+}
+.plus .card_plus .my_btn {
+    color: var(--sp-primary);
+    background-color: var(--sp-light-dark);
+    font-weight: 500;
+}
+.plus .card_plus {
+    height: 30%;
+}
+.plus .hidden_col .card_plus {
+    height: 100%;
 }
 
 .now {
