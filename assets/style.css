@@ -160,7 +160,8 @@ header .fa-magnifying-glass:hover {
     color: var(--sp-light);
     transition: box-shadow ease-in-out 0.3s;
 }
-.returnal .my_btn:hover {
+.returnal .my_btn:hover,
+.takes_two .my_btn:hover {
     box-shadow: 1px 0px 0px 4px rgb(111, 7, 7) inset;
 }
 
@@ -173,11 +174,17 @@ header .fa-magnifying-glass:hover {
     color: var(--sp-primary);
     font-weight: 500;
 }
-.presentation .my_btn {
+.presentation .my_btn,
+.explore .my_btn {
     background-color: var(--sp-primary);
     color: var(--sp-light);
     font-size: 0.8rem;
     font-weight: 500;
+    transition: box-shadow ease-in-out 0.3s;
+}
+.presentation .my_btn:hover,
+.explore .my_btn:hover {
+    box-shadow: 1px 0px 0px 4px #1c3e8e inset;
 }
 .presentation .slide_presentation:hover {
     border-bottom: 3px solid var(--sp-primary);
@@ -186,7 +193,6 @@ header .fa-magnifying-glass:hover {
     background-color: var(--sp-dark);
 }
 
-
 .plus {
     background-color: var(--sp-secondary-light);
 }
@@ -194,7 +200,12 @@ header .fa-magnifying-glass:hover {
     color: var(--sp-primary);
     background-color: var(--sp-light-dark);
     font-weight: 500;
+    transition: box-shadow ease-in-out 0.3s;
 }
+.plus .card_plus .my_btn:hover {
+    box-shadow: 1px 0px 0px 4px var(--sp-secondary) inset;
+}
+
 .plus .card_plus,
 .now .card_plus {
     height: 30%;
@@ -207,6 +218,11 @@ header .fa-magnifying-glass:hover {
     color: var(--sp-darker);
     background-color:var(--sp-light);
     font-weight: 500;
+    transition: box-shadow ease-in-out 0.3s;
+
+}
+.now .my_btn:hover {
+    box-shadow: 1px 0px 0px 4px var(--sp-secondary) inset;
 }
 
 
