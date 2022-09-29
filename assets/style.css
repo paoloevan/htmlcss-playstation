@@ -105,19 +105,40 @@ header .my_btn {
     color: var(--sp-light);
     background-color: var(--sp-secondary-dark);
 }
-header i {
-    color: var(--sp-darker);
+
+header .my_header_a {
+    color: var(--sp-secondary);
+}
+header .my_header_a:hover {
+    color: var(--sp-secondary-dark);
 }
 header .header_bottom #navbarSupportedContent .fa-angle-down {
     font-size: 0.7rem;
     padding-left: 0.2rem;
+    color: var(--sp-secondary);
+}
+header .fa-magnifying-glass {
+    color: var(--sp-secondary);
+}
+header .fa-magnifying-glass:hover {
+    color: var(--sp-secondary-dark);
+}
+.header_bottom .my_btn {
+    transition: box-shadow ease-in-out 0.3s;
+}
+.header_bottom .my_btn:hover {
+    box-shadow: 1px 0px 0px 4px var(--sp-secondary) inset;
 }
 /* #endregion */
 
 /* #region Main*/
-.returnal .jumbotron,
+
+.returnal .jumbotron {
+    background-image: url(./img/jumbo-bg.png);
+    position: relative;
+}
 .takes_two .jumbotron {
-    height: 650px;
+    background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
     position: relative;
 }
 .jumbotron img {
@@ -135,6 +156,10 @@ header .header_bottom #navbarSupportedContent .fa-angle-down {
 .takes_two .my_btn {
     background-color: var(--sp-danger);
     color: var(--sp-light);
+    transition: box-shadow ease-in-out 0.3s;
+}
+.returnal .my_btn:hover {
+    box-shadow: 1px 0px 0px 4px rgb(111, 7, 7) inset;
 }
 
 .my_carousel .my_card img {
