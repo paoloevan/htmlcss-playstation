@@ -1,0 +1,284 @@
+/* #region Common rules */
+:root {
+    --sp-darker: #000000;
+    --sp-light: #FFFFFF;
+    --sp-dark-blue: #161C3B;
+    --sp-dark: #1F1F1F;
+    --sp-primary: #2D64E6;
+    --sp-secondary-dark: #363636;
+    --sp-secondary: #727272;
+    --sp-secondary-light: #BEBCBB;
+    --sp-danger: #CD3D0F;
+    --sp-light-dark: #D9DADC;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 500;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 23px;
+}
+p {
+    font-size: 15px;
+    font-weight: 500;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+/* #endregion */
+
+
+/* #region Debug */
+.debug .header_top {
+    height: 50px;
+}
+.debug .header_bottom {
+    height: 100px;
+    background-color: #2D64E6;
+}
+.debug .returnal,
+.debug .takes_two {
+    height: 300px;
+    background-color: #161C3B;
+}
+.debug .my_carousel {
+    height: 500px;
+}
+.debug .my_card{
+    border: 1px solid;
+    height: 50px;
+}
+.debug .presentation {
+    background-color: antiquewhite;
+    height: 1000px;
+}
+.debug .card_presentation {
+    border: 1px solid;
+    height: 150px;
+}
+.debug .slide_presentation,
+.debug .card_new,
+.debug .card_explore,
+.debug .card_sale,
+.debug .card_plus,
+.debug .card_now,
+.debug .card_social,
+.debug .card_footer {
+    border: 1px solid red;
+    height: 150px;
+}
+.debug .plus {
+    height: 300px;
+}
+/* #endregion */
+
+/* Utilities */
+.hidden_col {
+    display: none;
+    height: 100%;
+}
+.my_btn {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 0.6rem 1rem;
+}
+.my_p_bg {
+    color: var(--sp-secondary);
+    font-weight: 500;
+}
+
+/* #region Header */
+.header_top {
+    background-color: var(--sp-darker);
+}
+.header_bottom {
+    font-weight: 500;
+}
+header .my_btn {
+    color: var(--sp-light);
+    background-color: var(--sp-secondary-dark);
+}
+
+header .my_header_a {
+    color: var(--sp-secondary);
+}
+header .my_header_a:hover {
+    color: var(--sp-secondary-dark);
+}
+header .header_bottom #navbarSupportedContent .fa-angle-down {
+    font-size: 0.7rem;
+    padding-left: 0.2rem;
+    color: var(--sp-secondary);
+}
+header .fa-magnifying-glass {
+    color: var(--sp-secondary);
+}
+header .fa-magnifying-glass:hover {
+    color: var(--sp-secondary-dark);
+}
+.header_bottom .my_btn {
+    transition: box-shadow ease-in-out 0.3s;
+}
+.header_bottom .my_btn:hover {
+    box-shadow: 1px 0px 0px 4px var(--sp-secondary) inset;
+}
+/* #endregion */
+
+/* #region Main*/
+
+.returnal {
+    height: 675px;
+    background-image: url(./img/jumbo-bg.png);
+    background-repeat: no-repeat;
+    background-size:unset;
+    background-position: center 0%;
+    position: relative;
+}
+.returnal .jumbotron,
+.takes_two .jumbotron {
+    position: absolute;
+    bottom: 3rem;
+}
+.takes_two {
+    height: 675px;
+    background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size:unset;
+    background-position: center 0%;
+    position: relative;
+}
+.returnal .my_btn,
+.takes_two .my_btn {
+    background-color: var(--sp-danger);
+    color: var(--sp-light);
+    transition: box-shadow ease-in-out 0.3s;
+}
+.returnal .my_btn:hover,
+.takes_two .my_btn:hover {
+    box-shadow: 1px 0px 0px 4px rgb(111, 7, 7) inset;
+}
+.my_card {
+    transition: transform 0.1s ease-in-out;
+}
+.my_carousel .my_card:hover {
+    cursor: pointer;
+    transform: translate(0,-20px);
+}
+.my_carousel .my_card img {
+    border-radius: 15px;
+}
+
+.presentation .sub_title {
+    font-size: 0.8rem;
+    color: var(--sp-primary);
+    font-weight: 500;
+}
+.presentation .my_btn,
+.explore .my_btn {
+    background-color: var(--sp-primary);
+    color: var(--sp-light);
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: box-shadow ease-in-out 0.3s;
+}
+.presentation .slide_presentation.my_active {
+    border-bottom: 3px solid var(--sp-primary);
+
+}
+.presentation .slide_presentation {
+    position: relative;
+}
+.presentation .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.344);
+    z-index: 99;
+}
+.presentation .slide_presentation:hover{
+    cursor: pointer;
+}
+
+.presentation .slide_presentation:hover
+.overlay {
+    cursor: pointer;
+    display: none;
+}
+.presentation .my_btn:hover,
+.explore .my_btn:hover {
+    box-shadow: 1px 0px 0px 4px #1c3e8e inset;
+}
+.presentation .slide_presentation:hover {
+    border-bottom: 3px solid var(--sp-primary);
+}
+.new {
+    background-color: var(--sp-dark);
+}
+
+.plus {
+    background-color: var(--sp-secondary-light);
+}
+.plus .card_plus .my_btn {
+    color: var(--sp-primary);
+    background-color: var(--sp-light-dark);
+    font-weight: 500;
+    transition: box-shadow ease-in-out 0.3s;
+}
+.plus .card_plus .my_btn:hover {
+    box-shadow: 1px 0px 0px 4px var(--sp-secondary) inset;
+}
+
+.plus .card_plus,
+.now .card_plus {
+    height: 30%;
+}
+
+.now {
+    background-color: var(--sp-dark-blue);
+}
+.now .card_plus img {
+    width: 70%;
+}
+.now .my_btn {
+    color: var(--sp-darker);
+    background-color:var(--sp-light);
+    font-weight: 500;
+    transition: box-shadow ease-in-out 0.3s;
+}
+.now .my_btn:hover {
+    box-shadow: 1px 0px 0px 4px var(--sp-secondary) inset;
+}
+
+
+/* footer */
+footer {
+    background-color: var(--sp-primary);
+    font-size: 0.8rem;
+}
+.my_p_footer {
+    font-size: 0.8rem;
+}
+footer span:hover {
+    cursor: pointer;
+}
+
+/*******************
+****Media Query*****
+**********************/
+@media screen and (min-width:768px) {
+    .hidden_col {
+        display:block;
+    }
+}
+@media screen and (min-width:992px) {
+    .my_container {
+        max-width: 720px;
+    }
+}
