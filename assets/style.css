@@ -108,6 +108,10 @@ header .my_btn {
 header i {
     color: var(--sp-darker);
 }
+header .header_bottom #navbarSupportedContent .fa-angle-down {
+    font-size: 0.7rem;
+    padding-left: 0.2rem;
+}
 /* #endregion */
 
 /* #region Main*/
