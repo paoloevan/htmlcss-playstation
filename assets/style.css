@@ -133,25 +133,27 @@ header .fa-magnifying-glass:hover {
 
 /* #region Main*/
 
-.returnal .jumbotron {
+.returnal {
+    height: 675px;
     background-image: url(./img/jumbo-bg.png);
+    background-repeat: no-repeat;
+    background-size:unset;
+    background-position: center 0%;
     position: relative;
 }
+.returnal .jumbotron,
 .takes_two .jumbotron {
+    position: absolute;
+    bottom: 3rem;
+}
+.takes_two {
+    height: 675px;
     background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size:unset;
+    background-position: center 0%;
     position: relative;
 }
-.jumbotron img {
-    height: 100%;
-    object-fit: cover;
-}
-.returnal .text_jumbo,
-.takes_two .text_jumbo {
-    position: absolute;
-    left: 2rem;
-    bottom: 4rem;
-}
-
 .returnal .my_btn,
 .takes_two .my_btn {
     background-color: var(--sp-danger);
