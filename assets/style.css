@@ -182,6 +182,10 @@ header i {
 /* footer */
 footer {
     background-color: var(--sp-primary);
+    font-size: 0.8rem;
+}
+.my_p_footer {
+    font-size: 0.8rem;
 }
 
 /*******************
