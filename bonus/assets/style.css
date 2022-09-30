@@ -293,7 +293,9 @@ main {
 .presentation .slide_presentation:hover {
     border-bottom: 3px solid var(--sp-primary);
 }
-.takes_two .jumbotron>.row {
+.takes_two .jumbotron>.row,
+.returnal .jumbotron>.row,
+.explore .container>.row {
     max-width: 100%;
 }
 .new {
