@@ -93,6 +93,7 @@ img {
     color: var(--sp-secondary);
     font-weight: 500;
 }
+/* #endregion */
 
 /* #region Header */
 #site_header {
@@ -200,9 +201,7 @@ header .fa-magnifying-glass:hover {
     font: var(--fa-font-solid);
     content: '\f106';
 }
-/*******************
-***** #endregion****
-*********************/
+/* #endregion ****/
 
 /* #region Main*/
 main {
@@ -349,9 +348,9 @@ main {
 .now .my_btn:hover {
     box-shadow: 1px 0px 0px 4px var(--sp-secondary) inset;
 }
+/* #endregion */
 
-
-/* footer */
+/* #region footer */
 footer {
     background-color: var(--sp-primary);
     font-size: 0.8rem;
@@ -362,10 +361,10 @@ footer {
 footer span:hover {
     cursor: pointer;
 }
+/* #endregion */
 
-/*******************
-****Media Query*****
-**********************/
+/* #region media */
+
 @media screen and (min-width:768px) {
     .hidden_col {
         display:block;
@@ -375,4 +374,51 @@ footer span:hover {
     .my_container {
         max-width: 720px;
     }
+}
+/* #endregion */
+
+/* Carousel */
+
+main .carousel-indicators [data-bs-target] {
+    box-sizing: border-box;
+    flex: 0 1 auto;
+    width: 300px;
+    height: 100px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .6;
+    transition: opacity .6s ease;
+}
+main .carousel-inner {
+    height: 630px;
+}
+main .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+main .carousel-indicators #slide1,
+main .carousel-indicators #slide3, 
+main .carousel-indicators #slide5 {
+    background-image: url(./img/returnal-listing-thumb-01-ps5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+main .carousel-indicators #slide2,
+main .carousel-indicators #slide4, 
+main .carousel-indicators #slide6 {
+    background-image: url(./img/ratchet-and-clank-rift-apart-keyart.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+main .carousel-indicators .active {
+    opacity: 1;
+    box-shadow: 0 0 5px 5px black;
 }
