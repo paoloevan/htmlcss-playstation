@@ -104,7 +104,33 @@ img {
 .header_bottom {
     font-weight: 500;
     background-color: var(--sp-light);
-    
+    position: relative;
+}
+#site_header .dropdown {
+    position: unset;
+}
+#site_header .dropdown-menu[data-bs-popper] {
+    top: 90%;
+    left: 0;
+    right: 0;
+    margin-top: var(--bs-dropdown-spacer);
+}
+#site_header .dropdown-menu {
+    border: none;
+}
+#site_header .item_drop {
+    transition: box-shadow 0.5s;
+}
+#site_header .item_drop:hover {
+    box-shadow: 0 0 4px 1px var(--sp-darker);
+    cursor: pointer;
+}
+#site_header .dropdown-menu a {
+    text-decoration: none;
+    color: var(--sp-darker);
+}
+#site_header .dropdown-menu a:hover {
+    color: var(--sp-primary);
 }
 header .my_btn {
     color: var(--sp-light);
