@@ -218,6 +218,9 @@ header .fa-magnifying-glass:hover {
 .presentation .slide_presentation:hover {
     border-bottom: 3px solid var(--sp-primary);
 }
+.takes_two .jumbotron>.row {
+    max-width: 100%;
+}
 .new {
     background-color: var(--sp-dark);
 }
