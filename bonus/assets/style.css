@@ -95,11 +95,16 @@ img {
 }
 
 /* #region Header */
+#site_header {
+    z-index: 999;
+}
 .header_top {
     background-color: var(--sp-darker);
 }
 .header_bottom {
     font-weight: 500;
+    background-color: var(--sp-light);
+    
 }
 header .my_btn {
     color: var(--sp-light);
@@ -113,12 +118,6 @@ header .my_header_a {
 .header_bottom .my_header_a i {
     color: var(--sp-secondary-dark);
 }
-
-/* header a:hover +
-header .my_header_a .rotate {
-    color: red;
-} */
-
 
 header .header_bottom #navbarSupportedContent .fa-angle-down {
     font-size: 0.7rem;
@@ -155,6 +154,9 @@ header .fa-magnifying-glass:hover {
 *********************/
 
 /* #region Main*/
+main {
+    margin-top: 108px;
+}
 
 .returnal {
     height: 675px;
