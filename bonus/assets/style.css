@@ -269,6 +269,7 @@ main {
 }
 .presentation .slide_presentation {
     position: relative;
+    height: 100%;
 }
 .presentation .slide_presentation p {
     position: relative;
@@ -281,7 +282,7 @@ main {
     margin: auto;
     left: 0;
     right: 0;
-    bottom: -5px;
+    bottom: 1px;
     background-color: var(--sp-primary);
 }
 .presentation .overlay {
