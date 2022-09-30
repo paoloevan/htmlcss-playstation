@@ -101,6 +101,30 @@ img {
 .header_top {
     background-color: var(--sp-darker);
 }
+.header_top img {
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes rainbow {
+    0% {
+        filter: invert(99%) sepia(85%) saturate(248%) hue-rotate(162deg) brightness(115%) contrast(100%);
+    }
+    50% {
+        filter: invert(86%) sepia(71%) saturate(647%) hue-rotate(358deg) brightness(103%) contrast(104%);
+        
+    }
+    75% {
+        filter: invert(10%) sepia(100%) saturate(5546%) hue-rotate(245deg) brightness(90%) contrast(150%);
+    }
+    100% {
+        filter: invert(67%) sepia(78%) saturate(5020%) hue-rotate(86deg) brightness(124%) contrast(121%);
+    }
+}
+.header_top img {
+    filter: invert(28%) sepia(43%) saturate(1898%) hue-rotate(274deg) brightness(89%) contrast(93%);    
+}
 .header_bottom {
     font-weight: 500;
     background-color: var(--sp-light);
