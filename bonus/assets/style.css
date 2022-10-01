@@ -207,6 +207,9 @@ header .fa-magnifying-glass:hover {
 main {
     margin-top: 108px;
 }
+#carouselExampleIndicators {
+    display: none;
+}
 
 .returnal {
     height: 675px;
@@ -376,10 +379,23 @@ footer span:hover {
     .my_container {
         max-width: 720px;
     }
+    
 }
+@media screen and (min-width:1200px) {
+    #carouselExampleIndicators {
+        display: block;
+    }
+    .returnal,
+    .my_carousel {
+        display: none;
+    }
+}
+
+
 /* #endregion */
 
 /* Carousel */
+
 
 main .carousel-indicators [data-bs-target] {
     box-sizing: border-box;
@@ -404,21 +420,23 @@ main .carousel-item {
     width: 100%;
     height: 100%;
 }
-main .carousel-indicators #slide1,
-main .carousel-indicators #slide3, 
-main .carousel-indicators #slide5 {
+main .carousel-indicators #slide_1,
+main .carousel-indicators #slide_3, 
+main .carousel-indicators #slide_5 {
     background-image: url(./img/returnal-listing-thumb-01-ps5.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size:cover;
     background-position: center;
+    border: none;
 }
-main .carousel-indicators #slide2,
-main .carousel-indicators #slide4, 
-main .carousel-indicators #slide6 {
+main .carousel-indicators #slide_2,
+main .carousel-indicators #slide_4, 
+main .carousel-indicators #slide_6 {
     background-image: url(./img/ratchet-and-clank-rift-apart-keyart.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
+    border: none;
 }
 main .carousel-indicators .active {
     opacity: 1;
